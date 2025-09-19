@@ -3,6 +3,7 @@ package com.example.Zoo.Service;
 import com.example.Zoo.DTO.AlimentacaoDto;
 import com.example.Zoo.Models.Alimentacao;
 import com.example.Zoo.Repositories.AlimentacaoRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -12,7 +13,7 @@ import java.util.Optional;
 public class AlimentacaoService {
 
     private final AlimentacaoRepository repository;
-
+    @Autowired
     public AlimentacaoService(AlimentacaoRepository repository) {
         this.repository = repository;
     }

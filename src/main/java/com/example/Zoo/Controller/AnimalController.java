@@ -37,7 +37,7 @@ public class AnimalController {
         return ResponseEntity.ok(animalService.getByAgeRange(idadeMin, idadeMax));
     }
     @PostMapping
-    public ResponseEntity<Animal> create(@RequestBody AnimalDTO animalDTO){
+    public ResponseEntity<Animal> create(@RequestBody Animal animalDTO){
         return ResponseEntity.ok(animalService.create(animalDTO));
     }
     @PutMapping
